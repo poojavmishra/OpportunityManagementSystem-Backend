@@ -34,18 +34,7 @@ public class OpportunityControllerTest {
 	@Inject
 	OpportunityController opportunityController;
 	
-//	@BeforeEach
-//	void setup() {
-//		opportunity = new Opportunity();
-//		opportunity.setDescription("Entry Level");
-//		opportunity.setId(1);
-//		opportunity.setExperience(1);
-//		opportunity.setHiringManager("Ruchika");
-//		opportunity.setJoiningLocation("Mumbai");
-//		opportunity.setRole("Backend Developer");
-//		opportunity.setSkills("SpringBoot");
-//		
-//	}
+
 	
 	@Test
     public void Role(){
@@ -88,9 +77,9 @@ public class OpportunityControllerTest {
 
     @Test
     public void hiringManager(){
-        opportunity.setHiringManager("Abhijeet Chavan");
+        opportunity.setHiringManager("Pooja Mishra");
         String name = opportunity.getHiringManager();
-        Assertions.assertEquals("Abhijeet Chavan", name);
+        Assertions.assertEquals("Pooja Mishra", name);
     }
 
     @Test
